@@ -41,15 +41,15 @@ from datalib import load_csv, mean, median
 from pathlib import Path
 
 
-# Para probar el código, descomenta las siguientes líneas
-# if __name__ == "__main__":
-#     filepath = Path(__file__).parent / "data/grades.csv"
+#Para probar el código, descomenta las siguientes líneas
+if __name__ == "__main__":
+     filepath = Path(__file__).parent / "data/grades.csv"
 
-#     data = load_csv(filepath)
+     data = load_csv(filepath)
 
-#     key = "Hindi"
-#     mean_value = mean(data, key)
-#     median_value = median(data, key)
+     key = "Hindi"
+     mean_value = mean(data, key)
+     median_value = median(data, key)
 
-#     print(f"Mean de '{key}': {mean_value}")
-#     print(f"Median de '{key}': {median_value}")
+     print(f"Mean de '{key}': {mean_value}")
+     print(f"Median de '{key}': {median_value}")
